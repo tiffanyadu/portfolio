@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tiffany Du | Portfolio Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Unica+One|Work+Sans:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" data-offset="60">
+  <!-- Fixed Navbar -->
+  <nav id="main-nav" class="navbar navbar-default ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Menu Toggle -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand scroll" href="#top"><img class="pull-left logo" src="assets/imgs/td-logo.png" alt="TD Logo"><span>Tiffany Du</span></a>
+      </div>
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a class="scroll" href="#top">Home <span class="sr-only">(current)</span></a></li>
+          <li><a class="scroll" href="#whatido">What I Do</a></li>
+          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+          <li><button class="btn td-btn pill small outline pink" data-toggle="modal" data-target="#contactModal">Contact</button></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Jumbotron -->
+  <header id="top" class="jumbotron">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          <img class="img-responsive center-block logo" src="assets/imgs/td-logo.png" alt="TD Logo">
+        </div>
+        <div class="col-xs-12">
+          <h1 class="title">Hi! My name is Tiffany.</h1>
+          <p>I like to design and code user-friendly websites.</p>
+          <p>Nice to meet you.</p>
+          <a class="btn td-btn solid yellow scroll mt-30" href="#content" title="Learn more about me!"><span class="glyphicon glyphicon-triangle-bottom"></span> Learn more</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content Begins -->
+  <div id="content" class="container-fluid text-center">
+    <!-- What I Do Section -->
+    <section id="whatido" class="row bg-white">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>What I Do</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="img-responsive center-block icon" src="assets/icons/rwd-icon.png" alt="Responsive Web Design Icon">
+          <p>Responsive Web Design</p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive center-block icon" src="assets/icons/ui-ux-icon.png" alt="UI/UX Design Icon">
+          <p>UI/UX Design</p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive center-block icon" src="assets/icons/dev-icon.png" alt="Development Icon">
+          <p>Development</p>
+        </div>
+        <div class="col-sm-3">
+          <img class="img-responsive center-block icon" src="assets/icons/star-icon.png" alt="Identity and Branding Icon">
+          <p>Identity &amp; Branding</p>
+        </div>
+        <div class="col-xs-12">
+          <a class="btn td-btn pill solid green mt-30" title="View my resume">View my Resume</a>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="row bg-star">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text-left teaser">
+          <a href="#" title="View Project">
+            <div class="overlay">
+              <h3>Project Title</h3>
+              <p>A very short description</p>
+            </div>
+            <img class="img-responsive" src="assets/imgs/placeholder.png" alt="Project Thumbnail">
+          </a>
+        </div>
+        <div class="col-sm-6 text-left teaser">
+          <a href="#" title="View Project">
+            <div class="overlay">
+              <h3>Project Title</h3>
+              <p>A very short description</p>
+            </div>
+            <img class="img-responsive" src="assets/imgs/placeholder.png" alt="Project Thumbnail">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me Section -->
+    <section class="row bg-pink">
+      <div class="col-xs-12">
+        <h1>Like what you see?</h1>
+        <button class="btn btn-default td-btn pill outline white" data-toggle="modal" data-target="#contactModal">Send me a message!</button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="row text-left bg-honeycomb">
+      <div class="col-xs-12 col-sm-6 mb-30">
+        <h3>About Me</h3>
+        <img class="img-responsive profile pull-left" src="assets/imgs/profile-hex.png" alt="Tiffany Du's Profile Photo">
+        <p>Hello there! I'm a front-end developer and aspiring UX designer based in Chicago.</p>
+        <small>Having spent a large chunk of my life searching, I've found my passion at the crossroads of design and technology. creating websites and marketing material for local businesses. When I'm not busy creating or learning, you'll either find me living up the foodie life or working on one of my many hobbies (I tend to switch it up every few months, so just ask me if you want to know what I'm up to!).</small>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h3>Latest Tweet</h3>
+        <div class="card mb-30">
+          <a class="twitter-timeline"  href="https://twitter.com/dusign" data-widget-id="329035628920573952" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="1" data-width="100%">Tweets by @dusign</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <h3>Let's Get Social!</h3>
+        <a class="social" href="https://www.linkedin.com/in/tiffanyadu/" target="_blank" title="LinkedIn">
+          <img src="assets/icons/linkedin.png" alt="LinkedIn Icon" class="img-responsive">
+        </a>
+        <a class="social" href="https://twitter.com/dusign" target="_blank" title="Twitter">
+          <img src="assets/icons/twitter.png" alt="Twitter Icon" class="img-responsive">
+        </a>
+        <a class="social" href="https://www.instagram.com/dusign/" target="_blank" title="Instagram">
+          <img src="assets/icons/ig.png" alt="Instagram Icon" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-xs-12 text-center">
+        <hr>
+        <h2>&ndash; Thanks for visiting! &ndash;</h2>
+        <small class="gray">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Tiffany Du // All Rights Reserved // Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></small>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactModal" tab-index="-1" role="dialog" aria-labelledby="Contact Form">
+    <div class="v-align-helper">
+      <div class="modal-dialog v-align-center" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel">Contact Me</h3>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
