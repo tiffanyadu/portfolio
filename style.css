@@ -345,9 +345,13 @@ footer.row {
 /* =====================
   Portfolio
 ===================== */
+#portfolio {
+  padding-bottom: 0;
+}
 #projects .carousel-caption {
   bottom: inherit;
   left: inherit;
+  margin-bottom: 60px;
   position: relative;
   right: inherit;
   text-align: left;
