@@ -105,27 +105,56 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6 text-left">
-          <div class="teaser">
-            <div class="overlay">
-              <span class="glyphicon glyphicon-menu-down"></span>
-              <h4>Project Title</h4>
-              <p>A very short description</p>
-              <button class="btn td-btn small outline green" data-toggle="modal" data-target="#projectModal">View Details</button>
+        <div id="projects" class="carousel slide" data-ride="carousel" data-interval="false">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#projects" data-slide-to="0" class="active"></li>
+            <li data-target="#projects" data-slide-to="1"></li>
+            <li data-target="#projects" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="col-sm-6">
+                <img class="img-responsive preview" src="assets/imgs/placeholder.png" alt="Project Title">
+              </div>
+              <div class="col-sm-6">
+                <div class="carousel-caption card">
+                  <h2>Twenty One Pilots Tribute Page</h2>
+                  <h4>Responsive Web Design</h4>
+                  <p>Short description about project. This is a website for this client who has these needs.</p>
+                  <button class="btn td-btn small outline green" data-toggle="modal" data-target="#projectModal">View Details</button>
+                </div>
+              </div>
             </div>
-            <img class="img-responsive" src="assets/imgs/placeholder.png" alt="Project Thumbnail">
-          </div>
-        </div>
-        <div class="col-sm-6 text-left">
-          <div class="teaser">
-            <div class="overlay">
-              <span class="glyphicon glyphicon-menu-down"></span>
-              <h4>Project Title</h4>
-              <p>A very short description</p>
-              <button class="btn td-btn small outline green" data-toggle="modal" data-target="#projectModal">View Details</button>
+            <div class="item">
+              <img class="preview" src="assets/imgs/placeholder.png" alt="Project Title">
+              <div class="carousel-caption">
+                <h3>Project 2</h3>
+                <h5>Responsive Web Design (category)</h5>
+                <p>Short description about project</p>
+                <button class="btn td-btn small outline green" data-toggle="modal" data-target="#projectModal">View Details</button>
+              </div>
             </div>
-            <img class="img-responsive" src="assets/imgs/placeholder.png" alt="Project Thumbnail">
+            <div class="item">
+              <img class="preview" src="assets/imgs/placeholder.png" alt="Project Title">
+              <div class="carousel-caption">
+                <h3>Project 3</h3>
+                <h5>Responsive Web Design (category)</h5>
+                <p>Short description about project</p>
+                <button class="btn td-btn small outline green" data-toggle="modal" data-target="#projectModal">View Details</button>
+              </div>
+            </div>
           </div>
+          <!-- Carousel Controls -->
+          <a class="left carousel-control" href="#projects" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#projects" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </section>

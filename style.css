@@ -197,12 +197,6 @@ section.row,
 footer.row {
   padding: 30px 30px 60px;
 }
-.card {
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
-  padding: 15px 30px;
-  width: 100%;
-}
 /*** Modal ***/
 /* Vertically Align to Center */
 .v-align-helper {
@@ -250,13 +244,7 @@ footer.row {
 .td-btn {
   padding: 12px 36px;
   text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out,
-              box-shadow 0.2s ease-in-out,
-              transform 0.2s ease-in-out;
-}
-.td-btn:focus,
-.td-btn:hover {
-  /*transform: scale(1.03);*/
+  transition: background-color 0.2s ease-in-out;
 }
 .td-btn.small {
   font-family: 'Work Sans', helvetica, sans-serif;
@@ -318,10 +306,6 @@ footer.row {
 }
 /* Social Icons */
 .social {
-  /*background-color: #394c4a;
-  background-color: rgba(8,33,30,0.4);
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(8,33,30,0.8);*/
   display: inline-block;
   transition: box-shadow 0.2s ease-in-out,
               transform 0.2s ease-in-out;
@@ -330,8 +314,6 @@ footer.row {
 }
 .social:focus,
 .social:hover {
-  /*box-shadow: 0 1px 6px 1px rgba(8,33,30,0.4);*/
-  /*transform: scale(1.075);*/
   background-color: transparent;
 }
 .social + .social {
@@ -350,38 +332,6 @@ footer.row {
 .icon + p { 
   margin-top: 15px;
 }
-/* Portfolio */
-.teaser {
-  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
-  overflow: hidden;
-  position: relative;
-}
-.teaser a {
-  position: relative;
-}
-.teaser .overlay {
-  background-color: #fffefd;
-  color: #394c4a;
-  height: 100%;
-  opacity: 0.9;
-  padding: 5px 15px;
-  position: absolute;
-  top: 100%;
-  transform: translateY(-45px);
-  transition: all 0.2s ease-in-out;
-  width: 100%;
-}
-.teaser .overlay:focus,
-.teaser .overlay:hover {
-  top: 0;
-  transform: translateY(0);
-}
-.teaser .overlay .glyphicon {
-  color: #9da7a6;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
 /* Profile Pic */
 .profile {
   max-width: 180px;
@@ -390,6 +340,28 @@ footer.row {
 /* Glyphicons */
 .glyphicon-heart {
   color: #df3778;
+}
+
+/* =====================
+  Portfolio
+===================== */
+#projects .carousel-caption {
+  bottom: inherit;
+  left: inherit;
+  position: relative;
+  right: inherit;
+  text-align: left;
+  text-shadow: none;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
+  color: #394c4a;
+  padding: 30px;
+  width: 100%;
+}
+.card h2 {
+  margin-top: 0;
 }
 
 /* =====================
