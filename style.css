@@ -343,12 +343,8 @@ footer.row {
 }
 
 /* =====================
-  Portfolio
+  Portfolio Projects
 ===================== */
-#portfolio {
-  /*padding-left: 0;
-  padding-right: 0;*/
-}
 #projects .carousel-control {
   background: none;
   color: #fffefd;
@@ -366,6 +362,10 @@ footer.row {
 }
 #projects .carousel-inner {
   overflow: inherit;
+}
+#projects .carousel-inner img {
+  /*max-width: 480px;*/
+  width: 100%;
 }
 #projects .carousel-caption {
   bottom: inherit;
@@ -458,6 +458,16 @@ footer.row {
 /* =====================
   Media Queries
 ===================== */
+@media (max-width: 991px) {
+  /*** Portfolio ***/
+  #projects .carousel-control {
+    margin-top: 300%;
+  }
+  #projects .carousel-inner img {
+    max-width: 480px;
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   /*** Page Elements ***/
   section .row [class^="col-sm-"] + [class^="col-sm-"],
