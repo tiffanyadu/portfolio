@@ -37,7 +37,8 @@ small {
 }
 a {
   color: #29a598;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
 }
 a:focus,
 a:hover {
@@ -53,7 +54,7 @@ hr {
   Navbar Styles
 ===================== */
 .navbar-default {
-  background: transparent;
+  background-color: transparent;
   border: none;
   height: 80px;
   left: 0;
@@ -83,12 +84,14 @@ hr {
   line-height: 60px;
   margin-top: 10px;
   opacity: 0;
+  overflow: hidden;
   text-transform: uppercase;
   visibility: hidden;
 }
 .navbar-brand .logo {
   margin-right: 15px;
-  max-height: 60px;
+  margin-top: -12px;
+  max-height: 90px;
 }
 .navbar-brand span {
   color: #29a598;
@@ -136,13 +139,8 @@ hr {
   display: block;
   margin-top: 0;
   opacity: 1;
-  overflow: hidden;
   transition: opacity 1s ease-in-out;
   visibility: visible;
-}
-.menu-fixed .navbar-brand .logo {
-  margin-top: -12px;
-  max-height: 90px;
 }
 
 /* =====================
@@ -208,6 +206,9 @@ footer.row {
   display: table-cell;
   pointer-events: none;
   vertical-align: middle;
+}
+.modal-dialog {
+  width: 90%;
 }
 .modal-header,
 .modal-footer {

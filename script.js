@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var $body = $('body');
 	var $navbar = $('.navbar-default');
-	var $offsetY = $navbar.offset().top + 9;
+	var $offsetY = $navbar.offset().top + 10;
 	var $menuButton = $('button.navbar-toggle');
 	var $menuIcon = $('.navbar-toggle .glyphicon');
 	var $collapsedMenu = $('.navbar-collapse.collapse');
