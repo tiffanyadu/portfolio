@@ -195,18 +195,6 @@ footer.row {
   padding: 30px 30px 60px;
 }
 /*** Modal ***/
-/* Vertically Align to Center */
-.v-align-helper {
-  display: table;
-  height: 100%;
-  pointer-events: none;
-  width: 100%;
-}
-.v-align-center {
-  display: table-cell;
-  pointer-events: none;
-  vertical-align: middle;
-}
 .modal-dialog {
   width: 90%;
 }
@@ -218,10 +206,6 @@ footer.row {
   background-color: #fffefd;
   border: none;
   box-shadow: 0 3px 6px rgba(8,33,30,0.2);
-  height: inherit;
-  margin: 0 auto;
-  pointer-events: all;
-  width: inherit;
 }
 /* Fade Up Animation */
 .modal.fade .modal-dialog {
