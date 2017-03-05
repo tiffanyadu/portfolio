@@ -195,17 +195,29 @@ footer.row {
   padding: 30px 30px 60px;
 }
 /*** Modal ***/
-.modal-dialog {
+.modal-dialog.wide {
   width: 90%;
 }
-.modal-header,
-.modal-footer {
+.modal-dialog.wide .row {
+  margin: 0 0 30px;
+}
+.modal-header {
   border: none;
+  padding: 30px 30px 0;
+}
+.modal-header .close {
+  font-size: 2rem;
 }
 .modal-content {
   background-color: #fffefd;
   border: none;
   box-shadow: 0 3px 6px rgba(8,33,30,0.2);
+}
+.modal-body {
+  padding: 30px;
+}
+.modal-footer {
+  padding: 30px 0 15px;
 }
 /* Fade Up Animation */
 .modal.fade .modal-dialog {
@@ -365,16 +377,13 @@ footer.row {
   box-shadow: 0 1px 3px rgba(8,33,30,0.5);
   color: #394c4a;
   padding: 30px;
-  width: 100%;
+  /*width: 100%;*/
 }
 .card h3 {
   margin-top: 0;
 }
 .card h4 {
   font-size: 0.8rem;
-}
-.card p {
-  margin-bottom: 30px;
 }
 #portfolio .carousel-indicators {
   bottom: 0;
@@ -388,6 +397,21 @@ footer.row {
 #portfolio .carousel-indicators li.active {
   height: 17px;
   width: 17px;
+}
+/*** Project Modals ***/
+.hero {
+  margin: 30px auto;
+  max-width: 900px;
+  width: 100%;
+}
+.label.tag {
+    background-color: #ffce3f;
+    border-radius: 0;
+    font-weight: normal;
+}
+/* To override button alignment in modals */
+.center {
+  text-align: center;
 }
 
 /* =====================
@@ -420,8 +444,22 @@ footer.row {
   color: #fffefd;
   position: relative;
 }
-.bg-star {
+.bg-green {
+  background-color: #29a598;
+  color: #fffefd;
+}
+.bg-star-y {
   background: #ffce3f url(assets/imgs/yellow-star.png) fixed;
+  background-size: 60px;
+  color: #fffefd;
+}
+.bg-star-g {
+  background: #29a598 url(assets/imgs/green-star.png) fixed;
+  background-size: 60px;
+  color: #fffefd;
+}
+.bg-star-p {
+  background: #df3778 url(assets/imgs/pink-star.png) fixed;
   background-size: 60px;
   color: #fffefd;
 }
@@ -443,6 +481,10 @@ footer.row {
 /* =====================
   Media Queries
 ===================== */
+@media (max-width: 1199px) {
+  /* Center class for medium screens */
+  .md-center { text-align: center; }
+}
 @media (max-width: 991px) {
   /*** Portfolio ***/
   #projects .carousel-control {
@@ -452,6 +494,7 @@ footer.row {
     max-width: 480px;
     width: 100%;
   }
+
 }
 @media (max-width: 767px) {
   /*** Page Elements ***/
@@ -498,5 +541,11 @@ footer.row {
   /*** Portfolio ***/
   #projects .carousel-control {
     margin-top: 300%;
+  }
+  #projects .card {
+    text-align: center;
+  }
+  .modal button {
+
   }
 }
