@@ -159,6 +159,8 @@ hr {
 .jumbotron .container {
   position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .jumbotron .row {
@@ -221,9 +223,13 @@ footer.row {
 }
 /* Fade Up Animation */
 .modal.fade .modal-dialog {
+  -webkit-transform: translate3d(0, 100vh, 0);
+  -ms-transform: translate3d(0, 100vh, 0);
   transform: translate3d(0, 100vh, 0);
 }
 .modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .modal-backdrop {
@@ -300,6 +306,18 @@ footer.row {
 .menu-fixed .outline.pink {
   margin-top: 11px;
 }
+/* Codepen Button */
+.codepenBtn > img {
+  margin-right: 6px;
+  margin-top: -3px;
+  width: 18px;
+}
+.codepenBtn:focus > img,
+.codepenBtn:hover > img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+}
+
 /* Social Icons */
 .social {
   display: inline-block;
@@ -355,6 +373,8 @@ footer.row {
 #projects .carousel-control:focus,
 #projects .carousel-control:hover {
   color: #29a598;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 #projects .carousel-inner {
