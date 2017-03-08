@@ -244,7 +244,7 @@ footer.row {
   z-index: 1025;
 }
 .modal-backdrop.in {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 /* =====================
@@ -472,9 +472,11 @@ footer.row {
 .mt-30 {
   margin-top: 30px;
 }
+.bg-shadow {
+  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
+}
 .bg-white {
   background-color: #fffefd;
-  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
   position: relative;
 }
 .bg-yellow {
@@ -483,7 +485,6 @@ footer.row {
 }
 .bg-pink {
   background-color: #df3778;
-  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
   color: #fffefd;
   position: relative;
 }
