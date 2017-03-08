@@ -147,7 +147,7 @@ hr {
   Jumbotron Styles
 ===================== */
 .jumbotron {
-  background: linear-gradient(rgba(255,254,253,0.85), rgba(255,254,253,0.85)), url("assets/imgs/me-example.jpg") center center fixed;
+  background: linear-gradient(rgba(255,254,253,0.85), rgba(255,254,253,0.85)), url("assets/imgs/jumbotron.jpg") center center fixed;
   background-size: cover;
   height: 100%;
   margin: 0;
@@ -306,14 +306,14 @@ footer.row {
 .menu-fixed .outline.pink {
   margin-top: 11px;
 }
-/* Codepen Button */
-.codepenBtn > img {
+/* Codepen and Github SVG Buttons */
+.iconBtn > img {
   margin-right: 6px;
   margin-top: -3px;
   width: 18px;
 }
-.codepenBtn:focus > img,
-.codepenBtn:hover > img {
+.iconBtn:focus > img,
+.iconBtn:hover > img {
   -webkit-filter: brightness(10);
   filter: brightness(10);
 }
