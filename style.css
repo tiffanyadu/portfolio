@@ -86,7 +86,7 @@ hr {
   opacity: 0;
   overflow: hidden;
   text-transform: uppercase;
-  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
 }
 .navbar-brand .logo {
   margin-right: 15px;
@@ -125,8 +125,8 @@ hr {
   height: 60px;
   padding-top: 0;
   position: fixed;
-  transition: background-color 1s ease-in-out,
-              box-shadow 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out,
+              box-shadow 0.5s ease-in-out;
 }
 .menu-fixed .navbar-header {
   height: 60px;
@@ -139,8 +139,6 @@ hr {
   display: block;
   margin-top: 0;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
-  visibility: visible;
 }
 
 /* =====================
@@ -152,7 +150,6 @@ hr {
   height: 100%;
   margin: 0;
   min-height: 510px;
-  /*padding: 5% 0;*/
   position: relative;
   width: 100%;
 }
@@ -175,18 +172,6 @@ hr {
 }
 .jumbotron p {
   margin: 0;
-}
-.learn-more {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
-.learn-more small {
-  display: block;
-  padding-bottom: 15px;
-}
-.learn-more button {
-  margin-bottom: 30px;
 }
 
 /* =====================
@@ -271,15 +256,6 @@ footer.row {
 .outline:focus,
 .outline:hover {
   background-color: #9da6a4;;
-  color: #fffefd;
-}
-.outline.yellow {
-  border-color: #ffce3f;
-  color: #ffce3f;
-}
-.outline.yellow:focus,
-.outline.yellow:hover {
-  background-color: #ffce3f;
   color: #fffefd;
 }
 .outline.green {
@@ -401,7 +377,6 @@ footer.row {
   overflow: inherit;
 }
 #projects .carousel-inner img {
-  /*max-width: 480px;*/
   width: 100%;
 }
 #projects .carousel-caption {
@@ -417,7 +392,6 @@ footer.row {
   box-shadow: 0 1px 3px rgba(8,33,30,0.5);
   color: #394c4a;
   padding: 30px;
-  /*width: 100%;*/
 }
 .card h3 {
   margin-top: 0;
@@ -479,18 +453,10 @@ footer.row {
   background-color: #fffefd;
   position: relative;
 }
-.bg-yellow {
-  background-color: #ffce3f;
-  color: #fffefd;
-}
 .bg-pink {
   background-color: #df3778;
   color: #fffefd;
   position: relative;
-}
-.bg-green {
-  background-color: #29a598;
-  color: #fffefd;
 }
 .bg-star-y {
   background: #ffce3f url(assets/imgs/yellow-star.png) fixed;
@@ -499,11 +465,6 @@ footer.row {
 }
 .bg-star-g {
   background: #29a598 url(assets/imgs/green-star.png) fixed;
-  background-size: 60px;
-  color: #fffefd;
-}
-.bg-star-p {
-  background: #df3778 url(assets/imgs/pink-star.png) fixed;
   background-size: 60px;
   color: #fffefd;
 }
@@ -542,7 +503,6 @@ footer.row {
     max-width: 480px;
     width: 100%;
   }
-
 }
 @media (max-width: 767px) {
   /*** Page Elements ***/
@@ -562,7 +522,7 @@ footer.row {
   }
   .navbar-toggle .glyphicon {
     color: #6b7a78;
-    top: -1px;
+    top: -2px;
   }
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
@@ -586,15 +546,11 @@ footer.row {
     margin: 15px auto 30px;
     max-width: 150px;
   }
-
   /*** Portfolio ***/
   #projects .carousel-control {
     margin-top: 300%;
   }
   #projects .card {
     text-align: center;
-  }
-  .modal button {
-
   }
 }

@@ -22,7 +22,7 @@
   <link rel="manifest" href="/manifest.json">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Unica+One|Work+Sans:300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Unica+One%7CWork+Sans:300,600" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -231,12 +231,12 @@
   </div>
 
   <!-- Resume Modal -->
-  <div class="modal fade" id="resumeModal" tab-index="-1" role="dialog" aria-labelledby="Tiffany Du's Resume">
+  <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitle">
     <div class="modal-dialog wide" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title text-center">Resume</h3>
+          <h3 class="modal-title text-center" id="resumeTitle">Resume</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
           <div class="row">
@@ -333,17 +333,17 @@
   </div><!-- /.modal -->
 
   <!-- Tribute Page Project Modal -->
-  <div class="modal fade" id="tributeModal" tab-index="-1" role="dialog" aria-labelledby="TOP Tribute Project Details">
+  <div class="modal fade" id="tributeModal" tabindex="-1" role="dialog" aria-labelledby="tributeTitle">
     <div class="modal-dialog wide" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title text-center">Project Details</h3>
+          <h3 class="modal-title text-center" id="tributeTitle">Project Details</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
           <div class="row">
             <div class="col-xs-12 bg-star-g">
-              <img class="img-responsive center-block hero" src="assets/portfolio/tribute/tribute-hero.png">
+              <img class="img-responsive center-block hero" src="assets/portfolio/tribute/tribute-hero.png" alt="Tribute Page Hero Image">
             </div>
           </div>
           <div class="row">
@@ -368,7 +368,7 @@
                 <span class="label tag">jQuery</span>
               </p>
               <a class="btn td-btn outline green mb-30" href="http://projects.tiffanydu.com/tribute/" target="_blank" title="Link to Tribute Page"><span class="glyphicon glyphicon-link"></span> Visit Live Site</a>
-              <a class="btn td-btn outline green mb-30 iconBtn" href="http://codepen.io/tiffanyadu/full/RKMavV/" target="_blank" title="Link to Tribute Page on CodePen"><img src="assets/icons/social/codepen-green.svg">View on CodePen</a>
+              <a class="btn td-btn outline green mb-30 iconBtn" href="http://codepen.io/tiffanyadu/full/RKMavV/" target="_blank" title="Link to Tribute Page on CodePen"><img src="assets/icons/social/codepen-green.svg" alt="Codepen Icon">View on CodePen</a>
             </div>
           </div><!-- /.row -->
           <div class="modal-footer center">
@@ -380,17 +380,17 @@
   </div><!-- /.modal -->
 
   <!-- Too Much Sauce Project Modal -->
-  <div class="modal fade" id="tmsModal" tab-index="-1" role="dialog" aria-labelledby="Too Much Sauce Project Details">
+  <div class="modal fade" id="tmsModal" tabindex="-1" role="dialog" aria-labelledby="tmsTitle">
     <div class="modal-dialog wide" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title text-center">Project Details</h3>
+          <h3 class="modal-title text-center" id="tmsTitle">Project Details</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
           <div class="row">
             <div class="col-xs-12 bg-star-g">
-              <img class="img-responsive center-block hero" src="assets/portfolio/tms/tms-hero.png">
+              <img class="img-responsive center-block hero" src="assets/portfolio/tms/tms-hero.png" alt="Too Much Sauce Hero Image">
             </div>
           </div>
           <div class="row">
@@ -426,17 +426,17 @@
   </div><!-- /.modal -->
 
   <!-- Ryan Bechtel Project Modal -->
-  <div class="modal fade" id="rbModal" tab-index="-1" role="dialog" aria-labelledby="Ryan Bechtel Project Details">
+  <div class="modal fade" id="rbModal" tabindex="-1" role="dialog" aria-labelledby="rbTitle">
     <div class="modal-dialog wide" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title text-center">Project Details</h3>
+          <h3 class="modal-title text-center" id="rbTitle">Project Details</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
           <div class="row">
             <div class="col-xs-12 bg-star-g">
-              <img class="img-responsive center-block hero" src="assets/portfolio/rb/rb-hero.png">
+              <img class="img-responsive center-block hero" src="assets/portfolio/rb/rb-hero.png" alt="Ryan Bechtel Hero Image">
             </div>
           </div>
           <div class="row">
@@ -472,15 +472,15 @@
   </div><!-- /.modal -->
 
   <!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tab-index="-1" role="dialog" aria-labelledby="Contact Form">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactTitle">
     <div class="modal-dialog" role="document">
       <div class="modal-content bg-pink">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h3 class="modal-title">Contact Me</h3>
+          <h3 class="modal-title" id="contactTitle">Contact Me</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
-          <form>
+          <form class="mb-15">
             <div class="form-group">
               <label class="sr-only" for="name">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -505,7 +505,7 @@
             </div>
           </form>
           <div class="modal-footer">
-            <button type="button" class="btn td-btn outline small" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn td-btn outline small white" data-dismiss="modal">Cancel</button>
             <button type="submit" class="btn td-btn outline small white">Send Message</button>
           </div><!-- /.modal-footer -->
         </div><!-- /.modal-body -->

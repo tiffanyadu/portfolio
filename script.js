@@ -1,10 +1,10 @@
+/*jslint browser:true */
 $(document).ready(function () {
 	var $body = $('body');
 	var $navbar = $('.navbar-default');
 	var $offsetY = $navbar.offset().top + 10;
 	var $menuButton = $('button.navbar-toggle');
 	var $menuIcon = $('.navbar-toggle .glyphicon');
-	var $collapsedMenu = $('.navbar-collapse.collapse');
 	var $collapsedMenuItem = $('.navbar-collapse.collapse li');
 	var $modalBackdropDiv = $('<div class="modal-backdrop fade in"></div>');
 	var $scrollButton = $('.scroll');
@@ -20,22 +20,8 @@ $(document).ready(function () {
 	}
 	document.onscroll = scroll;
 
-	// Mobile Menu Icon Toggle
-	$menuButton.on('click', function () {
-		if ($menuIcon.hasClass('glyphicon-menu-hamburger')) {
-			openMenu();
-			// Close menu after clicking a link
-			$collapsedMenuItem.on('click', function () {
-				$('.navbar-toggle').click(); // Trigger collapse animation
-				closeMenu();
-			});
-		} else {
-			closeMenu();
-		}
-	});
-	// Collapse menu on resize
-	$(window).resize(closeMenu());
-	function openMenu () {
+	// Mobile Menu functions
+	function openMenu() {
 		$menuIcon.removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove active');
 		$modalBackdropDiv.css('z-index', 900);
 		$body.append($modalBackdropDiv);
@@ -55,9 +41,24 @@ $(document).ready(function () {
 			$navbar.css('background-color', 'transparent');
 		}
 	}
+	// Mobile Menu Icon Toggle
+	$menuButton.on('click', function () {
+		if ($menuIcon.hasClass('glyphicon-menu-hamburger')) {
+			openMenu();
+			// Close menu after clicking a link
+			$collapsedMenuItem.on('click', function () {
+				$('.navbar-toggle').click(); // Trigger collapse animation
+				closeMenu();
+			});
+		} else {
+			closeMenu();
+		}
+	});
+	// Collapse menu on resize
+	$(window).resize(closeMenu());
 
 	// Smooth scroll to content
-	$scrollButton.on('click', function(e) {
+	$scrollButton.on('click', function (e) {
 		e.preventDefault();
 		var $link = $(this).attr('href');
 		$('html, body').animate({
@@ -67,12 +68,12 @@ $(document).ready(function () {
 
 	// Social icons hover effect
 	$socialIcon.on({
-		'focus mouseenter': function() {
+		'focus mouseenter': function () {
 			var $iconImg = $(this).children();
 			var $href = $iconImg.attr('src').slice(0, -9) + 'color.svg'; // Remove 'black.svg' from end and add 'color.svg'
 			$iconImg.attr('src', $href);
 		},
-		'blur mouseleave': function() {
+		'blur mouseleave': function () {
 			var $iconImg = $(this).children();
 			var $href = $iconImg.attr('src').slice(0, -9) + 'black.svg';
 			$iconImg.attr('src', $href);
@@ -87,7 +88,9 @@ $(document).ready(function () {
     var $bottomMargin = parseInt($dialog.css('margin-bottom'), 10);
 
     // If modal is taller than screen height, top margin = bottom margin
-    if($offset < $bottomMargin) $offset = $bottomMargin;
+    if ($offset < $bottomMargin) {
+    	$offset = $bottomMargin;
+    }
     $dialog.css('margin-top', $offset);
   }
 
