@@ -480,33 +480,39 @@
           <h3 class="modal-title" id="contactTitle">Contact Me</h3>
         </div><!-- /.modal-header -->
         <div class="modal-body">
-          <form class="mb-15">
+          <form class="mb-15" name="contactForm" method="post" action="mail.php">
+            <div class="alert alert-success fade in alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <p>Thank you for your message! I will get back to you as soon as possible.</p>
+            </div>
             <div class="form-group">
               <label class="sr-only" for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Full Name" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
             </div>
             <div class="form-group">
               <label class="sr-only" for="message">Message</label>
-              <textarea class="form-control" id="message" rows="6" placeholder="Your message here..." required></textarea>
+              <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
             </div>
             <small>*All fields are required</small>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> I'm a robot!
-              </label>
+            <div style="display:none">
+              <label for="robot">Are you a robot?</label>
+              <input type="text" id="robot" name="robot">
+              <p>Please leave this field blank!</p>
             </div>
           </form>
           <div class="modal-footer">
             <button type="button" class="btn td-btn outline small white" data-dismiss="modal">Cancel</button>
-            <button type="submit" class="btn td-btn outline small white">Send Message</button>
+            <input type="submit" name="submit" class="btn td-btn outline small white" value="Send Message">
           </div><!-- /.modal-footer -->
         </div><!-- /.modal-body -->
       </div><!-- /.modal-content -->

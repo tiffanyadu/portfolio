@@ -478,10 +478,6 @@ footer.row {
 .dashed {
   border-top: 2px dashed #ffce3f;
 }
-/*** Contact Form ***/
-.checkbox {
-  display: none;
-}
 
 /* =====================
   Media Queries
